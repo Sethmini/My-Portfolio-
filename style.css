@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: #fff;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(137, 121, 121, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: color #333;
+    padding:10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: background-color 0.3s,transform 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+.container {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #1c1c1c;
+    box-shadow: 0 4px 8px rgba(255, 255,255, 0.1);
+}
+
+h2 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 20px;
+}
+
+.project-card {
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #222;
+    transition: box-shadow 0.3s,transform 0.3s;
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 12px rgba(255,255,255,0.2);
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.project-card a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+footer a{
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.about-image {
+    max-width: 150px;
+    border-radius: 50%;
+    margin: 10px auto;
+    display: block;
+    border: 4px solid #fff;
+}
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.technology {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #333;
+    padding: 10px;
+}
+
+.technology img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    border-radius: 5px;
+
+}
+
+.technology span {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 8px;
+}
