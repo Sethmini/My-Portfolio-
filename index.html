@@ -1,126 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Sethmini Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-        
-    </head>
-    <body>
-        <header>
-            <h1>Hi, I am Sethmini</h1>
-        </header>
-
-        <nav>
-            <a href="#about">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d540239ab2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
         <div class="container">
-            <section id="about" class="section">
-                <h2>About Me</h2>
-                <img src="Images/Image.JPG" alt="My Photo" class="about-image">
-                <p>Hello! Welcome to my portfolio! I am a Computer Engineering undergraduate in the Faculty of Engineering, University of Sri Jayewardenepura. I am continuously learning and trying to improve my skills.</p>
-                <p>Currently I am familiar with following technologies and I am learning more about them to improve my skills further.</p>
-
-                <div class="technologies">
-                    <div class = technology>
-                        <img src="Icons/html5.png" alt="HTML5">
-                    </div>
-
-                    <div class = technology>
-                        <img src="Icons/css3.png" alt="CSS3">
-                    </div>
-
-                    <div class = technology>
-                        <img src="Icons/javascript.png" alt="JS">
-                    </div>
-
-                    <div class = technology>
-                        <img src="Icons/react.png" alt="REACT">
-                    </div>
-
-                    <div class = technology>
-                        <img src="Icons/Cpp.png" alt="CPP">
-                    </div>
-
-                    <div class = technology>
-                        <img src="Icons/python.png" alt="Python">
-                    </div>
-
-                    <div class = technology>
-                        <img src="Icons/java.png" alt="Java">
-                    </div>
-
-                    <div class = technology>
-                        <img src="Icons/firebase.png" alt="FB">
-                    </div>
-
-                    <div class = technology>
-                        <img src="Icons/mysql.png" alt="MYSQL">
-                    </div>
-
-                    <div class = technology>
-                        <img src="Icons/nodejs.png" alt="Nodejs">
-                    </div>
-                </div>
-            </section>
-
-            <section id="projects" class="section">
-                <h2>Projects</h2>
-                <div class="projects">
-
-                    <div class="project-card">
-                        <img src="Images/Project1.png" alt="Project 1">
-                        <h3>Parkbuddy</h3>
-                        <p>A user-centered mobile app and web app enabling real time parking slot booking for drivers and seamless parking space management for car park owners.</p>
-                        <p>Tech stack - HTML, CSS, JavaScript, Firebase, Flutter, React, Node.js</p>
-            
-                        <a href="https://github.com/Sahasvinandith/Park-buddy-web.git" target="_blank">View Web App on GitHub</a>
-                        <a href="https://github.com/Sahasvinandith/Parkbuddy-flutter.git" target="_blank">View Mobile App on GitHub</a>
-                    </div>
-
-                    <div class="project-card">
-                        <img src="Images/Project3.png" alt="Project 2">
-                        <h3>Shoppingbot</h3>
-                        <p> A chatbot that assists supermarket customers by providing shelf numbers for items they are searching for.</p>
-                        <p>Tech Stack - Python</p>
-                        <a href="https://github.com/Sethmini/Shoppingbot.git" target="_blank">View on GitHub</a>
-                    </div>
-
-                    <div class="project-card">
-                        <img src="Images/Project4.png" alt="Project 3">
-                        <h3>My Portfolio</h3>
-                        <p>A portfolio website to update about the projects I have implemented.</p>
-                        <p>Tech Stack - HTML, CSS</p> 
-                        <a href="https://github.com/Sethmini/My-Portfolio-.git" target="_blank">View on GitHub</a>
+            <nav>
+                <img src="Images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#techstack">Tech Stack</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-rectangle-xmark" onclick="closemenu()"></i>
                 
-                    </div>
-
-                </div>
-            </section>
-
-            <section id="contact" class="section">
-                <h2>Contact Me</h2>
-                <div class="contact-container">
-                    <div class="contact-info">
-                        <p>If you'd like to work together or have any questions, feel free to reach me out!</p>
-                        <p>Email: <a href="mailto:sethminik6@gmail.com">sethminik6@gmail.com</a></p>
-                        <p>LinkedIn: <a href="https://www.linkedin.com/in/sethmini-kularatne-3aa180225/">Sethmini Kularatne</a></p>
-                        <p>Contact No: +94 770605154</p>
-                    </div>
-                    <img src="Images/MyImage.JPG" alt="Contact Photo" class="contact-photo">
-                </div>
-            </section>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Tech Enthusiast | Eager to learn and grow</p>
+                <h1>Hi, I am <span>Sethmini Kularatne</span></h1>
+            </div>
         </div>
+    </div>
 
-        <footer>
-            <p>&copy; 2024 Sethmini Portfolio. Built by me</p>
-        </footer>
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p><br>I am a motivated Computer Engineering undergraduate with a strong passion for learning new technologies and embracing fresh opportunities. I thrive on challenges and possess a never-give-up attitude, always pushing myself to expand my skills and knowledge. I excel under pressure, take full responsibility for my tasks, and work effectively as part of a team. Committed to continuous growth, I am eager to contribute meaningfully to the industry and further develop my personal and professional capabilities.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick=" opentab('soft-skills')">Soft Skills</p>
+                        <p class="tab-links" onclick=" opentab('education')">Education</p>
+                        <p class="tab-links"onclick=" opentab('experience')">Experience</p>
+                    </div>
 
-    </body>
+                    <div class="tab-contents active-tab" id="soft-skills">
+                        <ul>
+                            <li><span>Good communication skills</span><br>Sinhala-Native proficiency<br>English - Full professional working proficiency</li>
+                            <li><span>Effective team player</span></li>
+                            <li><span>Never give up attitude</span></li>
+                            <li><span>Attention to detail</span></li>
+                            <li><span>Time management</span></li>
+                            <li><span>Self learning and adaptability</span></li>
+                            <li><span>Presentation skills</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Present</span><br>Faculty of Engineering,University of Sri Jayewardenepura</li>
+                            <li><span>2007 - 2020</span><br>Musaeus College - Colombo 7</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024</span><br>Vice Captain - University Carrom Women's Team</li>
+                            <li><span> November 2024 - Present</span><br>Online Maths Tutor - Third Space Global</li>
+                            <li><span>2023 - Present</span><br>Social Media Handler - Computer Engineering Society(CENSOC)</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Projects -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div class="project" onclick="redirectTo('https://github.com/Sahasvinandith/Park-buddy-web')">
+                <h2>Parkbuddy</h2>
+                <p>March 2024 - September 2024</p>
+                <p><br>A user-centered mobile app and web app enabling real time parking
+                    slot booking for drivers and seamless parking space management for
+                    car park owners.</p>
+                <p><br>HTML | CSS | JavaScript | React | Firebase | Node.js | Github</p>
+            </div>
+
+            <div class="project" onclick="redirectTo('https://github.com/Sethmini/Shoppingbot')">
+                <h2>ShoppingBot</h2>
+                <p>August 2024</p>
+                <p><br>A chatbot that assists supermarket customers by providing shelf
+                    numbers for items they are searching and generates a PDF with the shelf numbers searched.</p>
+                <p><br>Python | spaCy | Tkinter | ReportLab</p>
+            </div>
+
+            <div class="project">
+                <h2>ShopMore</h2>
+                <p>February 2025 - Present</p>
+                <p><br>An E-Commerce website for an online clothing store.</p>
+                <p><br>HTML | CSS | JavaScript | React | MongoDB | Node.js | Express.js | Github</p>
+            </div>
+
+            <div class="project">
+                <h2>MediHerb</h2>
+                <p>November 2024 - Present</p>
+                <p><br>A  web application that connects patients with Ayurvedic doctors
+                    and pharmacies. Personalized doctor recommendations and access
+                    to Ayurvedic pharmacies when purchasing medical herbs.</p>
+                <p><br> HTML | CSS | JavaScript | React | Firebase | Firebase ML kit | Github</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- /services/ -->
+<div id="techstack">
+    <div class="container">
+        <h1 class="sub-title">Tech Stack</h1>
+        <div class="techstack-list">
+            <div class="techstack">
+                <img src="Images/react.png">
+            </div>
+            <div class="techstack">
+                <img src="Images/Cpp.png">
+            </div>
+            <div class="techstack">
+                <img src="Images/python.png">
+            </div>
+            <div class="techstack">
+                <img src="Images/java.png">
+            </div>
+            <div class="techstack">
+                <img src="Images/html5.png">
+            </div>
+            <div class="techstack">
+                <img src="Images/css3.png">
+            </div>
+            <div class="techstack">
+                <img src="Images/javascript.png">
+            </div>
+            <div class="techstack">
+                <img src="Images/nodejs.png">
+            </div>
+            <div class="techstack">
+                <img src="Images/firebase.png">
+            </div>
+            <div class="techstack">
+                <img src="Images/mysql.png">
+            </div>
+            <div class="techstack">
+                <img src="Images/mongodb.png">
+            </div>
+            <div class="techstack">
+                <img src="Images/expressjs.png">
+            </div>
+            <div class="techstack">
+                <img src="Images/github.png">
+            </div>
+            <div class="techstack">
+                <img src="Images/selenium.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>sethminik6@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+94770605154</p>
+                <div class="social-icons">
+                    <a href="www.linkedin.com/in/sethmini-kularatne-3aa180225"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <br>
+                <a href="Images/Sethmini Kularatne CV.pdf" download class="btn btn2">Download CV</a> 
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Sethmini. All rights reserved.</p>
+
+    </div>
+
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    function redirectTo(url) {
+    window.open(url, "_blank"); // Opens in a new tab
+}
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxq5FMNV1Mfbu1u1Oj1mZsStd4FuhJBZWgz9u4yTaI23dVCRItWc221gkjFpUiGDIVb/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML =""
+            },5000)
+            form.reset()
+        } )
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+
 </html>
