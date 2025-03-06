@@ -192,9 +192,9 @@ nav ul li a:hover::after{
 
 /* Button Styling */
 .projects-list button {
-    background-color: #16c4db;
+    background-color: #15c2d9 !important;
     border: none;
-    color: white;
+    color: white !important;
     padding: 10px 15px;
     font-size: 13px;
     font-weight: bold;
